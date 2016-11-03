@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Parse CSS</title>
+	<meta name="generator" content="BBEdit 10.1">
+	<link rel="stylesheet" type="text/css" href="css/global.css" media="screen">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/cssParser.js"></script>
+	<script src="js/global.js"></script>
+</head>
+<body>
+	<div id="site_container">
+		<div class="column" id="column_1">
+			<h2>Paste raw CSS here</h2>
+			<textarea></textarea>
+		</div>
+		<div class="column" id="column_2">
+			<h2>Specify replacements</h2>
+			<h3>Path replacement</h3>
+			<label for="replace_target">string to replace</label>
+			<input type='text' id="replace_target" value="../">
+			<label for="replace_new">replacement string</label>
+			<input type='text' id="replace_new" value="new/path">
+			<h3>Selector to append</h3>
+			<label for="append_item">selector to append</label>
+			<input type='text' id="append_item" value=".device-pc">
+			<a href="#">PROCESS</a>
+			<div id="feedback">
+				
+			</div>
+		</div>
+		<div class="column" id="column_3">
+			<h2>Paste this somewhere in your file</h2>
+			<textarea></textarea>
+		</div>
+	</div>
+</body>
